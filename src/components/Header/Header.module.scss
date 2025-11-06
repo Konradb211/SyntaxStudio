@@ -1,16 +1,27 @@
 .header {
-	max-width: 1600px;
+	max-width: 1650px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 40px 20px 0 20px;
 	&__container {
-		height: 100vh;
+		border-radius: 30px;
+		height: calc(100vh - 40px);
 		background: var(--header-bg-color);
-		&__title {
-			color: var(--heading-text-color);
-			font-weight: 600;
-			font-size: clamp(28px, 5vw, 48px);
-			width: 40%;
+		padding-left: var(--padding-wrapper);
+		padding-right: var(--padding-wrapper);
+		&__text {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			height: 90%;
+			&__title {
+				h1 {
+					color: var(--heading-text-color);
+					font-weight: 600;
+					font-size: var(--h1-size);
+					padding-bottom: 25px;
+				}
+			}
 		}
 	}
 }

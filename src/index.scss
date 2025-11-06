@@ -45,12 +45,19 @@
 }
 
 :root {
+	--color-black: #000;
+	--color-white: #fff;
+
+	--heading-text-color: #020202;
 	--header-bg-color: linear-gradient(
 		90deg,
 		rgba(202, 208, 255, 1) 49%,
 		rgba(227, 227, 227, 1) 100%
 	);
-	--heading-text-color: #020202;
+
+	--padding-wrapper: 75px;
+
+	--h1-size: clamp(28px, 5vw, 48px);
 }
 
 *,
@@ -157,6 +164,5 @@ table {
 }
 
 input {
-	-webkit-appearance: none;
 	border-radius: 0;
 }
