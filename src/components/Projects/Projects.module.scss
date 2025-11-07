@@ -1,0 +1,39 @@
+.projects {
+	padding: 40px 20px;
+	max-width: 1650px;
+	width: 100%;
+	margin: 0 auto;
+
+	&__container {
+		border-radius: 30px;
+		background: var(--header-bg-color);
+		padding-left: var(--padding-wrapper);
+		padding-right: var(--padding-wrapper);
+		padding-top: 25px;
+		padding-bottom: 25px;
+		&__items {
+			padding-top: 25px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 25px;
+			&__item {
+				max-width: calc((100% - (25px * 2)) / 3);
+				width: 100%;
+				img {
+					max-height: 471px;
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+				h3 {
+					padding-top: 10px;
+					padding-bottom: 20px;
+					padding-left: 20px;
+				}
+				p {
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}

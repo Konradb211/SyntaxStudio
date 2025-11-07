@@ -1,0 +1,35 @@
+.aboutUs {
+	padding: 60px 20px;
+	max-width: 1650px;
+	width: 100%;
+	margin: 0 auto;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding-left: var(--padding-wrapper);
+		padding-right: var(--padding-wrapper);
+		&__left {
+			max-width: 500px;
+			width: 100%;
+			p {
+				padding-top: 50px;
+				text-align: justify;
+				line-height: 20px;
+			}
+		}
+		&__right {
+			max-width: 500px;
+			width: 100%;
+
+			&__technologies {
+				display: flex;
+				justify-content: space-around;
+			}
+			p {
+				padding-top: 50px;
+				text-align: justify;
+				line-height: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,122 @@
+.contact {
+	max-width: 1650px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 20px;
+
+	&__container {
+		padding-left: var(--padding-wrapper);
+		padding-right: var(--padding-wrapper);
+
+		&__from {
+			padding-top: 50px;
+			max-width: 50%;
+
+			&__input {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				gap: 25px;
+
+				&__text {
+					max-width: calc((100% - (25px)) / 2);
+					width: 100%;
+					position: relative;
+
+					input {
+						width: 100%;
+						padding: 21px 20px;
+						border: 1.7px solid var(--stroke-color);
+						border-bottom-left-radius: 20px;
+						border-bottom-right-radius: 20px;
+						transition: border-color 0.25s ease, box-shadow 0.25s ease,
+							background 0.25s ease;
+						background: white;
+
+						&:focus,
+						&:focus-within {
+							border-color: var(--stroke-color-dark);
+							outline: none;
+						}
+
+						&::placeholder {
+							color: transparent;
+						}
+					}
+
+					label {
+						position: absolute;
+						left: 20px;
+						bottom: 50%;
+						transform: translateY(50%);
+						background-color: white;
+						padding: 0 6px;
+						line-height: 1;
+						transition: transform 0.2s ease, bottom 0.2s ease,
+							font-size 0.2s ease, color 0.2s ease;
+						pointer-events: none;
+					}
+
+					&:has(input:focus),
+					&:has(input:not(:placeholder-shown)) {
+						label {
+							bottom: 85%;
+							transform: translateY(0) scale(0.92);
+							color: var(--stroke-color-dark);
+						}
+					}
+				}
+			}
+			&__textarea {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				padding-top: 25px;
+				textarea {
+					width: 100%;
+					padding: 21px 20px;
+					border: 1.7px solid var(--stroke-color);
+					border-bottom-left-radius: 20px;
+					border-bottom-right-radius: 20px;
+					transition: border-color 0.25s ease, box-shadow 0.25s ease,
+						background 0.25s ease;
+					background: white;
+					min-height: 149px;
+					resize: vertical;
+
+					&:focus,
+					&:focus-within {
+						border-color: var(--stroke-color-dark);
+						outline: none;
+					}
+
+					&::placeholder {
+						color: transparent;
+					}
+				}
+
+				label {
+					position: absolute;
+					left: 20px;
+					bottom: 50%;
+					transform: translateY(50%);
+					background-color: white;
+					padding: 0 6px;
+					line-height: 1;
+					transition: transform 0.2s ease, bottom 0.2s ease, font-size 0.2s ease,
+						color 0.2s ease;
+					pointer-events: none;
+				}
+
+				&:has(textarea:focus),
+				&:has(textarea:not(:placeholder-shown)) {
+					label {
+						bottom: 80%;
+						transform: translateY(0) scale(0.92);
+						color: var(--stroke-color-dark);
+					}
+				}
+			}
+		}
+	}
+}

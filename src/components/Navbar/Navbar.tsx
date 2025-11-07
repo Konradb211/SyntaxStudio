@@ -5,9 +5,9 @@ import styles from "./Navbar.module.scss"
 export const Navbar = () => {
 	return (
 		<nav className={styles.navbar}>
-			<div className={styles.navbar__img}>
+			<a href='/' className={styles.navbar__img}>
 				<img src={logo} alt='Logotyp SyntaxStudio' />
-			</div>
+			</a>
 			<ul className={styles.navbar__list}>
 				{navItems.map(item => (
 					<li key={item.name}>

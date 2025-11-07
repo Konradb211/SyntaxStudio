@@ -4,8 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
-	&__img {
-	}
+	position: sticky;
 	&__list {
 		display: flex;
 		gap: 60px;
@@ -13,6 +12,9 @@
 			a {
 				text-decoration: none;
 				color: var(--color-black);
+				font-size: 16px;
+				line-height: auto;
+				letter-spacing: 0;
 			}
 		}
 	}
